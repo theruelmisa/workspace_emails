@@ -1,5 +1,5 @@
-# Workspace | Promotional Email
+# Workspace | Email Layouts
 
-A promotional email design for Workspace eCommerce
+Email Layouts for Workspace eCommerce
 
 by Ruel Misa

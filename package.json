@@ -1,8 +1,8 @@
 {
-  "name": "workspace-promotional",
+  "name": "workspace-emails",
   "version": "1.0.0",
-  "description": "Promotional Email Layout for Workspace eCommerce",
-  "repository": "theruelmisa/workspace_promotional_email",
+  "description": "Email Layouts for Workspace eCommerce",
+  "repository": "theruelmisa/workspace_emails",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",

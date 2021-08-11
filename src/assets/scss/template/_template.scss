@@ -9,6 +9,20 @@ li {
 	list-style: none;
 }
 
+// Reused Styles
+
+.headline {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.body-text {
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+// Header
+
 .header {
 	margin-bottom: 20px;
 
@@ -20,60 +34,104 @@ li {
 
 	&__logo {
 
-	.columns {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	h1 {
-		margin-bottom: 0;
-		font-weight: 300;
-		.emphasis {
-		font-weight: 700;
+		.columns {
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
-	}
+
+		h1 {
+			margin-bottom: 0;
+			font-weight: 300;
+			.emphasis {
+				font-weight: 700;
+			}
+		}
 
 	}
 
 	.nav {
-	padding-top: 20px;
+		padding-top: 20px;
 
-	.columns {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-		padding-bottom: 0 !important;
-	}
-
-	&__items {
 		.columns {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			padding-bottom: 0 !important;
 		}
-	}
 
-	&__item {
-		display: inline-block;
-		width: 90%;
-		text-align: center;
-		padding: 5px;
-		font-size: 14px;
-
-
-		&--primary {
-		color: red !important;
+		&__items {
+			.columns {
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+			}
 		}
-	}
 
-	.menu-divider {
-		display: block; 
-		height: 20px; 
-		width: 1px; 
-		background: #ccc; 
-		background-color: #ccc;
-	}
+		&__item {
+			display: inline-block;
+			width: 90%;
+			text-align: center;
+			padding: 5px;
+			font-size: 14px;
+
+
+			&--primary {
+			color: red !important;
+			}
+		}
+
+		.menu-divider {
+			display: block; 
+			height: 20px; 
+			width: 1px; 
+			background: #ccc; 
+			background-color: #ccc;
+		}
 	}
 
 }
+
+// Main Content Area - Hero
+
+
+
+.hero {
+	
+
+	.columns {
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+
+		& > table {
+			table-layout: fixed;
+			max-width: 568px;
+		}
+	}
+
+
+
+	&__img {
+		margin-bottom: 20px;
+	}
+
+	&__cta {
+		display: block;
+		width: 25%;
+		padding: 10px;
+		margin: 0 auto;
+		width: 25%;
+		border: 1px solid black;
+		text-align: center;
+		font-weight: 700;
+
+		&:hover {
+			color: $white;
+			background-color: $black;
+		}
+	}
+}
+
+
 
 
 

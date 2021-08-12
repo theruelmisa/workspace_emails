@@ -26,10 +26,29 @@ li {
 .header {
 	margin-bottom: 20px;
 
+	& > .columns {
+		margin-top: 0;
+	}
+
+	&__shipping {
+		background: $black;
+		background-color: $black;
+
+		.columns {
+			padding-top: 10px;
+			padding-bottom: 10px !important;
+		}
+
+		span {
+			color: $white;
+			display: inline-block;
+		}
+	}
+
 	& > tbody > tr > th {
 		padding-bottom: 0 !important;
-		padding-right: 5px !important;
-		padding-left: 5px !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
 	}
 
 	&__logo {
@@ -92,7 +111,6 @@ li {
 // Main Content Area - Hero
 
 
-
 .hero {
 	
 
@@ -106,6 +124,15 @@ li {
 			table-layout: fixed;
 			max-width: 568px;
 		}
+
+		.headline {
+			font-weight: 700;
+		}
+	}
+
+	&__promo {
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 
 

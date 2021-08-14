@@ -21,6 +21,23 @@ li {
 	margin-bottom: 25px;
 }
 
+.btn {
+	display: block;
+	width: 150px;
+	padding: 10px;
+	margin: 0 auto;
+	border: 1px solid black;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+
+	&:hover {
+		color: $white;
+		background-color: $black;
+	}
+}
+
 .hline {
 	
 	.columns {
@@ -77,6 +94,7 @@ li {
 			font-weight: 300;
 			.emphasis {
 				font-weight: 700;
+				color: #aaa;
 			} 
 		}
 
@@ -138,10 +156,6 @@ li {
 			table-layout: fixed;
 			max-width: 568px;
 		}
-
-		.headline {
-			font-weight: 700;
-		}
 	}
 
 	&__promo {
@@ -154,23 +168,28 @@ li {
 	&__img {
 		margin-bottom: 20px;
 	}
+}
 
-	&__cta {
-		display: block;
-		width: 25%;
-		padding: 10px;
-		margin: 0 auto;
-		width: 25%;
-		border: 1px solid black;
-		text-align: center;
-		font-weight: 700;
+// Main Content Area - Additional Info
 
-		&:hover {
-			color: $white;
-			background-color: $black;
+.additional-info {
+	background: #efeeea;
+	background-color: #efeeea;
+
+	.columns {
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+
+		& > table {
+			table-layout: fixed;
+			max-width: 568px;
 		}
 	}
 }
+
+// Main Content Area - Category Gallery
 
 
 // Services
@@ -197,8 +216,8 @@ li {
 		}
 
 		&-img {
-			width: 40px;
-			height: 40px;
+			width: 40%;
+			height: 40%;
 			margin: 0 auto;
 			margin-bottom: 20px;
 		}
@@ -287,4 +306,5 @@ li {
 
 }
 
+// Media
 

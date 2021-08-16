@@ -76,7 +76,7 @@ li {
 		}
 	}
 
-	& > tbody > tr > th {
+	& > tbody > tr > th.columns.first.last {
 		padding-bottom: 0 !important;
 		padding-right: 0 !important;
 		padding-left: 0 !important;
@@ -273,20 +273,15 @@ li {
 	}
 
 	&__text {
-		position: absolute;
-		top: 320px;
-		left: 115px;
-		width: 350px;
-		padding: 20px 0;
+		padding: 10px 0;
 		background: #f9f9f9;
 		background-color: #f9f9f9;
 
 	}
 
 	.body-text {
-		padding-top: 10px;
 		width: 75%;
-		margin: 10px auto 25px;
+		margin: 0 auto 25px;
 	}
 
 	&__btn {
@@ -321,8 +316,8 @@ li {
 		}
 
 		&-img {
-			width: 40%;
-			height: 40%;
+			width: 50px !important;
+			height: 50px !important;
 			margin: 0 auto;
 			margin-bottom: 20px;
 		}
@@ -413,3 +408,36 @@ li {
 
 // Media
 
+@media only screen 
+	and (max-width: 500px ) {
+
+	.categories {
+
+		.category {
+
+			&__text {
+				text-align: center;
+			}
+		}
+	}
+
+
+
+	.services__info-img{
+		width: 10px;
+		height: 10px;
+	}
+
+	.footer {
+
+		&__social-nav {
+
+			&-item {
+				width: 50%;
+				padding-left: 10px;
+				padding-right: 10px;
+				margin: 0 5px;
+			}
+		}
+	}
+}

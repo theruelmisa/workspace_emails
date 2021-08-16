@@ -267,7 +267,9 @@ li {
 
 	&__img {
 		margin-bottom: 20px;
-
+		width: 100%;
+		height: 360px;
+		object-fit: cover;
 	}
 
 	&__text {

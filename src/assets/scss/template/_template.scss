@@ -237,6 +237,64 @@ li {
 	}
 }
 
+// Main Content - Members
+
+.members {
+	background: #f9f9f9;
+	background-color: #f9f9f9;
+
+	& > tbody > tr > th {
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+	}
+	
+	&__details {
+		.columns {
+			position: relative;
+			padding-bottom: 20px !important;
+			padding-top: 20px !important;
+			padding-right: 40px !important;
+			padding-left: 40px !important;
+	
+			& > table {
+				table-layout: fixed;
+				max-width: 568px;
+			}
+		}
+	}
+
+	&__img {
+		margin-bottom: 20px;
+
+	}
+
+	&__text {
+		position: absolute;
+		top: 320px;
+		left: 115px;
+		width: 350px;
+		padding: 20px 0;
+		background: #f9f9f9;
+		background-color: #f9f9f9;
+
+	}
+
+	.body-text {
+		padding-top: 10px;
+		width: 75%;
+		margin: 10px auto 25px;
+	}
+
+	&__btn {
+
+		.columns {
+			padding-bottom: 0;
+		}
+	}
+}
+
 // Services
 
 .services {

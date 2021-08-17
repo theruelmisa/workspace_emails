@@ -2,7 +2,9 @@
 body,
 html, 
 .body {
-	background: #f3f3f3 !important;
+	background: $light-gray !important;
+	background-color: $light-gray !important;
+	color: $black;
 }
 
 li {
@@ -14,11 +16,15 @@ li {
 .headline {
 	font-size: 24px;
 	margin-bottom: 15px;
+	hyphens: none;
+
 }
 
 .body-text {
 	font-size: 14px;
 	margin-bottom: 25px;
+	hyphens: none;
+
 }
 
 .btn {
@@ -26,7 +32,7 @@ li {
 	width: 150px;
 	padding: 10px;
 	margin: 0 auto;
-	border: 1px solid black;
+	border: 1px solid $black;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -34,6 +40,7 @@ li {
 
 	&:hover {
 		color: $white;
+		background: $black;
 		background-color: $black;
 	}
 }
@@ -46,8 +53,8 @@ li {
 			display: block;
 			height: 1px;
 			width: 100%;
-			background: #bbb;
-			background-color: #bbb;
+			background: $dark-gray;
+			background-color: $dark-gray;
 		}
 	}
 }
@@ -94,7 +101,7 @@ li {
 			font-weight: 300;
 			.emphasis {
 				font-weight: 700;
-				color: #aaa;
+				color: $dark-gray;
 			} 
 		}
 
@@ -125,7 +132,7 @@ li {
 
 
 			&--primary {
-			color: red !important;
+			color: $warning-color !important;
 			}
 		}
 
@@ -133,8 +140,8 @@ li {
 			display: block; 
 			height: 20px; 
 			width: 1px; 
-			background: #ccc; 
-			background-color: #ccc;
+			background: $medium-gray; 
+			background-color: $medium-gray;
 		}
 	}
 
@@ -171,10 +178,12 @@ li {
 
 	.btn {
 		color: $white;
+		background: $black;
 		background-color: $black;
 
 		&:hover {
 			color: $black;
+			background: $white;
 			background-color: $white;
 		}
 	}
@@ -183,8 +192,8 @@ li {
 // Main Content Area - Additional Info
 
 .additional-info {
-	background: #efeeea;
-	background-color: #efeeea;
+	background: $medium-gray;
+	background-color: $medium-gray;
 
 	.columns {
 		padding-bottom: 20px !important;
@@ -202,8 +211,8 @@ li {
 // Main Content Area - Category Gallery
 
 .categories {
-	background: #efeeea;
-	background-color: #efeeea;
+	background: $medium-gray;
+	background-color: $medium-gray;
 
 	& > tbody > tr > th {
 		padding-bottom: 20px !important;
@@ -240,8 +249,8 @@ li {
 // Main Content - Members
 
 .members {
-	background: #f9f9f9;
-	background-color: #f9f9f9;
+	background: $lighter-gray;
+	background-color: $lighter-gray;
 
 	& > tbody > tr > th {
 		padding-bottom: 20px !important;
@@ -274,9 +283,6 @@ li {
 
 	&__text {
 		padding: 10px 0;
-		background: #f9f9f9;
-		background-color: #f9f9f9;
-
 	}
 
 	.body-text {
@@ -296,8 +302,8 @@ li {
 
 .services {
 	// use this color for icons 454544
-	background: #f9f9f9;
-	background-color: #f9f9f9;
+	background: $lighter-gray;
+	background-color: $lighter-gray;
 	
 	& > tbody > tr > th {
 		padding-bottom: 30px !important;
@@ -334,8 +340,8 @@ li {
 
 .footer {
 
-	background: #efeeea;
-	background-color: #efeeea;
+	background: $medium-gray;
+	background-color: $medium-gray;
 
 	& > tbody > tr > th {
 		padding-top: 30px;
@@ -381,7 +387,7 @@ li {
 
 		a {
 			text-decoration: underline;
-			color: #aaa;
+			color: $dark-gray;
 		}
 
 		span {
@@ -407,6 +413,13 @@ li {
 }
 
 // Media
+
+// Firefox White Space Small Column Issue Fix
+@media only screen and (max-width: 596px) {
+    td.small-6, th.small-6 {
+        display: table-cell !important;
+    }
+}
 
 @media only screen 
 	and (max-width: 500px ) {
@@ -440,4 +453,24 @@ li {
 			}
 		}
 	}
+}
+
+@media all {
+	// Typography
+	.btn:hover {
+		color: $white !important;
+		background: $black;
+		background-color: $black;
+	}
+
+	.hero {
+
+		& a:hover, & .btn:hover {
+			color: $black !important;
+			background: $white !important;
+			background-color: $white !important;
+		}
+	}
+
+
 }

@@ -121,6 +121,10 @@
         span {
             font-size: 12px;
         }
+
+        .span-title {
+            text-align: right;
+        }
     }
 
 
@@ -156,6 +160,7 @@
 
             &-name {
                 display: block;
+                text-align: center;
             }
         }
     }

@@ -1,4 +1,15 @@
 // Transaction Email Content Styles
+.span-title {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.price {
+	display: block;
+	text-align: right;
+	font-size: 12px;
+}
+
 .order {
 
 	background: $medium-gray;
@@ -78,6 +89,10 @@
         &-name {
             font-weight: 700;
         }
+
+        &-price {
+            text-align: right !important;
+        }
 	}
 }
 
@@ -91,6 +106,19 @@
 		padding-right: 40px !important;
 		padding-left: 40px !important;
 	}
+
+    &__calculation {
+        & > tbody > tr > th {
+            vertical-align: middle;
+            padding-bottom: 30px;
+            
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+
 
     &__headline {
 
@@ -108,6 +136,7 @@
             padding-left: 0;
             padding-right: 0;
         }
+        
 
         &-card {
 
@@ -123,15 +152,12 @@
 
             &-name {
                 display: block;
-                font-size: 12px;
-                font-weight: 700;
             }
         }
-
-        &-total {
-            display: block;
-            text-align: center;
-            font-size: 12px;
-        }
     }
+}
+
+.shipping {
+    background: $medium-gray;
+	background-color: $medium-gray;
 }

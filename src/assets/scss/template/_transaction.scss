@@ -40,8 +40,8 @@
 
 		&:hover {
 			color: $black !important;
-			background: $white;
-			background-color: $white;
+			background: inherit;
+			background-color: inherit;
 		}
 	}
 
@@ -166,7 +166,7 @@
 	background-color: $medium-gray;
 
     & > tbody > tr > th {
-		padding-bottom: 40px !important;
+		padding-bottom: 20px !important;
 		padding-top: 0px !important;
 		padding-right: 40px !important;
 		padding-left: 40px !important;
@@ -196,4 +196,27 @@
             padding-top: 20px;
         }
     }
+}
+
+.support-info {
+    background: $medium-gray;
+	background-color: $medium-gray;
+
+    & > tbody > tr > th {
+		padding-bottom: 30px !important;
+		padding-top: 0px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+	}
+
+    &__details p {
+        padding: 10px 40px;
+    }
+
+    .hline {
+        .columns {
+            padding-top: 20px;
+        }
+    }
+
 }

@@ -1,4 +1,5 @@
 @import 'promo';
+@import 'transaction';
 
 // Body Styles 
 body,
@@ -148,55 +149,6 @@ li {
 	}
 
 }
-
-// Transaction Email Content Styles
-.order {
-
-	background: $medium-gray;
-	background-color: $medium-gray;
-
-	.btn {
-		color: $white;
-		background: $black;
-		background-color: $black;
-		margin-bottom: 10px;
-
-		&:hover {
-			color: $black !important;
-			background: $white;
-			background-color: $white;
-		}
-	}
-
-	&__details {
-		margin-bottom: 10px;
-
-		&-title {
-			font-size: 20px;
-		}
-
-		&-date {
-			display: block;
-			text-align: center;
-			font-size: 12px;
-			color: $dark-gray;
-		}
-	}
-
-	&__items {
-
-		&-img {
-			width: 100%;
-			object-fit: cover;
-		}
-	}
-}
-
-.payment {
-	background: $medium-gray;
-	background-color: $medium-gray;
-}
-
 
 // Services
 

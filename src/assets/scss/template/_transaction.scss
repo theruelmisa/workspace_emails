@@ -4,6 +4,10 @@
     font-weight: 700;
 }
 
+.span-body {
+    font-size: 14px;
+}
+
 .price {
 	display: block;
 	text-align: right;
@@ -160,4 +164,36 @@
 .shipping {
     background: $medium-gray;
 	background-color: $medium-gray;
+
+    & > tbody > tr > th {
+		padding-bottom: 40px !important;
+		padding-top: 0px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+	}
+
+    &__headline {
+
+        .headline {
+            color: $dark-gray;
+        }
+    }
+
+    &__details {
+    
+        .columns {
+            vertical-align: middle;
+            padding-bottom: 10px;
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        
+    }
+    .hline {
+        .columns {
+            padding-top: 20px;
+        }
+    }
 }

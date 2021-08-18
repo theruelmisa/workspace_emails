@@ -84,4 +84,54 @@
 .payment {
 	background: $medium-gray;
 	background-color: $medium-gray;
+
+    & > tbody > tr > th {
+		padding-bottom: 40px !important;
+		padding-top: 0px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+	}
+
+    &__headline {
+
+        .headline {
+            color: $dark-gray;
+        }
+    }
+
+    &__info {
+
+        .columns {
+            vertical-align: middle;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-card {
+
+            .columns {
+                vertical-align: middle;
+                padding-right: 10px;
+            }
+
+            &-img {
+                object-fit: cover;
+                
+            }
+
+            &-name {
+                display: block;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+        &-total {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
 }

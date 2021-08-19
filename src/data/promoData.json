@@ -1,0 +1,36 @@
+{
+    "heroImage": "https://i.imgur.com/HDWReh0.jpg",
+    "promocode": "SPACECREATED30",
+    "heroCTALink": "#",
+    "addInfoCTALink": "#",
+    "galleryCTALink": "#",
+    "membersCTALink": "#",
+    "galleryRow1": [
+        {
+            "title": "Shop All Desks",
+            "image": "https://i.imgur.com/fKNyKHW.jpg",
+            "altText": "Desks",
+            "link": "#"
+        },
+        {
+            "title": "Shop All Chairs",
+            "image": "https://i.imgur.com/kj3TqAA.jpg",
+            "altText": "Chairs",
+            "link": "#"
+        }
+    ],
+    "galleryRow2": [
+        {
+            "title": "Shop All Lamps",
+            "image": "https://i.imgur.com/sB92zue.jpg",
+            "altText": "Lamps",
+            "link": "#"
+        },
+        {
+            "title": "Shop All Storage",
+            "image": "https://i.imgur.com/0TwovxJ.jpg",
+            "altText": "Storage",
+            "link": "#"
+        }
+    ]
+}

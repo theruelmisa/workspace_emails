@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "title": "Affordable Prices",
+            "image": "https://i.imgur.com/LwCWN2u.png",
+            "altText": "Prices Logo"
+        },
+        {
+            "title": "Lifetime Warranty",
+            "image": "https://i.imgur.com/UXJrS4j.png",
+            "altText": "Lifetime Logo"
+        },
+        {
+            "title": "Fast Shipping",
+            "image": "https://i.imgur.com/iZGMFnH.png",
+            "altText": "Delivery Logo"
+        },
+        {
+            "title": "Modular Design",
+            "image": "https://i.imgur.com/lv76vX3.png",
+            "altText": "Modular Logo"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "orderStatusLink": "#",
+    "orderNumber": "14181",
+    "orderDate": "August 17, 2020",
+    "orders": [
+        {
+            "name": "Ribbed Desk Chair (Brown)",
+            "image": "https://i.imgur.com/7BAIyI1.png",
+            "quantity": "1",
+            "price": "250.00"
+        }
+    ],
+    "subtotal": "250.00",
+    "discountName": "SPACECREATED30",
+    "discountAmount": "75.00",
+    "shippingFee": "0.00",
+    "total": "175.00",
+    "cardType": "https://i.imgur.com/krTXAR2.png",
+    "cardName": "Amex",
+    "cardNumber": "**********9002",
+    "customer": {
+        "name": "Samantha Grant",
+        "phone": "(917) 322-3440",
+        "address1": "123 Broadway Ave.",
+        "address2": "---",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States",
+        "postalCode": "11249"
+    },
+    "supportLink": "#"
+}

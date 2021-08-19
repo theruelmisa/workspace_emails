@@ -22,17 +22,17 @@ subject: Your Order is Being Prepared
 					<p class="body-text text-center">
 						Follow the status of your order below:
 					</p>
-					<a href="#" class="btn">View Status</a>
+					<a href={{ transactionData.orderStatusLink }} class="btn">View Status</a>
 					
 				</columns>
 			</row>
 			<row class="order__details">
 				<columns small="12" large="12">
 					<h3 class="order__details-title .headline text-center">
-						Order No. #14181 
+						Order No. #{{ transactionData.orderNumber }}
 					</h3>
 					<span class="order__details-date">
-						August 17, 2020
+						{{ transactionData.orderDate }}
 					</span>
 				</columns>
 			</row>
@@ -41,26 +41,29 @@ subject: Your Order is Being Prepared
                     <span></span>
                 </columns>
             </row>
-			<row class="order__items">
-				<columns small="3" large="3">
-					<img src="https://i.imgur.com/7BAIyI1.png" alt="item image" class="order__items-img">
-				</columns>
-				<columns small="3" large="3">
-					<span class="order__items-name">
-						Ribbed Desk Chair (Brown)
-					</span>
-				</columns>
-				<columns small="3" large="3">
-					<span class="order__items-quantity">
-						x 1
-					</span>
-				</columns>
-				<columns small="3" large="3">
-					<span class="order__items-price">
-						$ 250.00
-					</span>
-				</columns>
-			</row>
+			{{#each transactionData.orders }}
+				<row class="order__items">
+					<columns small="4" large="4">
+						<img src={{ this.image }} alt={{ this.name }} class="order__items-img">
+					</columns>
+					<columns small="3" large="3">
+						<span class="order__items-name">
+							{{ this.name }}
+						</span>
+					</columns>
+					<columns small="2" large="2">
+						<span class="order__items-quantity">
+							x {{ this.quantity }}
+						</span>
+					</columns>
+					<columns small="3" large="3">
+						<span class="order__items-price">
+							$ {{ this.price }}
+						</span>
+					</columns>
+				</row>
+			{{/each }}
+			
 			<row class="hline">
                 <columns small="12" large="12">
                     <span></span>
@@ -87,15 +90,15 @@ subject: Your Order is Being Prepared
 							<span class="span-title">Subtotal</span>
 						</columns>
 						<columns small="5" large="5">
-							<span class="price">$ 250.00</span>
+							<span class="price">$ {{ transactionData.subtotal }}</span>
 						</columns>
 					</row>
 					<row class="payment__calculation-discount">
 						<columns small="7" large="7">
-							<span class="span-title">Discount (SPACECREATED30)</span>
+							<span class="span-title">Discount ({{ transactionData.discountName }})</span>
 						</columns>
 						<columns small="5" large="5">
-							<span class="price">$ -75.00</span>
+							<span class="price">$ -{{ transactionData.discountAmount }}</span>
 						</columns>
 					</row>
 					<row class="payment__calculation-shipping">
@@ -103,7 +106,7 @@ subject: Your Order is Being Prepared
 							<span class="span-title">Shipping Fee</span>
 						</columns>
 						<columns small="5" large="5">
-							<span class="price">$ 0.00</span>
+							<span class="price">$ {{ transactionData.shippingFee }}</span>
 						</columns>
 					</row>
 					<row class="payment__calculation-total">
@@ -111,7 +114,7 @@ subject: Your Order is Being Prepared
 							<span class="span-title">Total</span>
 						</columns>
 						<columns small="5" large="5">
-							<span class="price">$ 175.00</span>
+							<span class="price">$ {{ transactionData.total }}</span>
 						</columns>
 					</row>
 				</columns>
@@ -126,19 +129,19 @@ subject: Your Order is Being Prepared
 				<columns small="7" large="7" >
 					<row class="payment__info-card">
 						<columns small="2" large="2" valign="middle">
-							<img src="https://i.imgur.com/krTXAR2.png" alt="card logo" class="payment__info-card-img">
+							<img src={{ transactionData.cardType }} alt={{ transactionData.cardName }} class="payment__info-card-img">
 						</columns>
 						<columns small="10" large="10" valign="middle">
 							<span class="payment__info-card-name span-title">
 								American Express 
-								<span class="gray-text">(**********9002)</span>
+								<span class="gray-text">({{ transactionData.cardNumber }})</span>
 							</span>
 						</columns>
 					</row>
 				</columns>
 				<columns small="5" large="5">
 					<span class="price">
-						$ 250.00
+						$ {{ transactionData.total }}
 					</span>
 				</columns>
 			</row>
@@ -157,32 +160,44 @@ subject: Your Order is Being Prepared
 				<columns small="12" large="12">
 					<row class="shipping__details-name">
 						<columns small="12" large="12">
-							<span class="span-body">Samantha Grant</span>
+							<span class="span-body">
+								{{ transactionData.customer.name }}
+							</span>
 						</columns>
 					</row>
 					<row class="shipping__details-address1">
 						<columns small="12" large="12">
-							<span class="span-body">123 Broadway Ave.</span>
+							<span class="span-body">
+								{{ transactionData.customer.address1 }}
+							</span>
 						</columns>
 					</row>
 					<row class="shipping__details-address2">
 						<columns small="12" large="12">
-							<span class="span-body">---</span>
+							<span class="span-body">
+								{{ transactionData.customer.address2 }}
+							</span>
 						</columns>
 					</row>
 					<row class="shipping__details-citystate">
 						<columns small="12" large="12">
-							<span class="span-body">Brookly, NY 11249</span>
+							<span class="span-body">
+								{{ transactionData.customer.city }}, {{ transactionData.customer.state }} {{transactionData.customer.postalCode }}
+							</span>
 						</columns>
 					</row>
 					<row class="shipping__details-country">
 						<columns small="12" large="12">
-							<span class="span-body">United States</span>
+							<span class="span-body">
+								{{ transactionData.customer.country }}
+							</span>
 						</columns>
 					</row>
 					<row class="shipping__details-phone">
 						<columns small="12" large="12">
-							<span class="span-body">(917) 322-3440</span>
+							<span class="span-body">
+								{{ transactionData.customer.phone }}
+							</span>
 						</columns>
 					</row>
 					
@@ -204,7 +219,7 @@ subject: Your Order is Being Prepared
 					<p class="body-text text-center">
 						If you have any questions regarding your order, shipment, or payment, you can contact us through the button below and we'll help you out.
 					</p>
-					<a href="#" class="btn">Contact Us</a>
+					<a href={{ transactionData.supportLink }} class="btn">Contact Us</a>
 				</columns>
 			</row>
 			<row class="hline">

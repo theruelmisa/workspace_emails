@@ -6,13 +6,13 @@ subject: Get 30% off on your first purchase
 <container>
 	<row class="hero">
 		<columns small="12" large="12">
-			<img src="https://i.imgur.com/HDWReh0.jpg" alt="hero image" class="hero__img">
+			<img src={{ promoData.heroImage }} alt="hero image" class="hero__img">
 			<h3 class="headline text-center">Boost Your Productivity!</h3>
 			<p class="body-text text-center">
 				Don't miss the chance to get a 30% off on your first order to help you get started with upping your home office game. Use 
-				<span class="hero__promo">spacecreated30</span> at checkout. 
+				<span class="hero__promo">{{ promoData.promocode }}</span> at checkout. 
 			</p>
-			<a href="#" class="btn">Start Shopping</a>
+			<a href={{ promoData.heroCTALink }} class="btn">Start Shopping</a>
 		</columns>
 	</row>
 	<spacer size="20"></spacer>
@@ -26,7 +26,7 @@ subject: Get 30% off on your first purchase
 			<p class="body-text text-center">
 				Our in-house design team is obsessed with finding solutions to help improve our customers' productivity. We know working from home can be challenging if the right pieces aren't in place. Let us help you find those missing pieces.
 			</p>
-			<a href="#" class="btn">Learn More</a>
+			<a href={{ promoData.addInfoCTALink }} class="btn">Learn More</a>
 		</columns>
 	</row>
 </container>
@@ -34,44 +34,32 @@ subject: Get 30% off on your first purchase
 	<row class="categories">
 		<columns small="12" large="12">
 			<row class="categories__row">
-				<columns small="12" large="6" class="category">
-					<a href="#" class="category__link">
-						<img src="https://i.imgur.com/fKNyKHW.jpg" alt="Desks" class="category__img">
-						<span class="category__text">
-							Shop All Desks
-						</span>
-					</a>
-				</columns>
-				<columns small="12" large="6" class="category">
-					<a href="#" class="category__link">
-						<img src="https://i.imgur.com/kj3TqAA.jpg" alt="Chairs" class="category__img">
-						<span class="category__text">
-							Shop All Chairs
-						</span>
-					</a>
-				</columns>
+				{{#each promoData.galleryRow1 }}
+					<columns small="12" large="6" class="category">
+						<a href={{ this.link }} class="category__link">
+							<img src={{ this.image }} alt={{ this.altText }} class="category__img">
+							<span class="category__text">
+								{{ this.title }}
+							</span>
+						</a>
+					</columns>
+				{{/each }}
 			</row>
 			<row class="categories__row">
-				<columns small="12" large="6" class="category">
-					<a href="#" class="category__link">
-						<img src="https://i.imgur.com/sB92zue.jpg" alt="Lamps" class="category__img">
-						<span class="category__text">
-							Shop All Lamps
-						</span>
-					</a>
-				</columns>
-				<columns small="12" large="6" class="category">
-					<a href="#" class="category__link">
-						<img src="https://i.imgur.com/0TwovxJ.jpg" alt="Storage" class="category__img">
-						<span class="category__text">
-							Shop All Storage
-						</span>
-					</a>
-				</columns>
+				{{#each promoData.galleryRow2 }}
+					<columns small="12" large="6" class="category">
+						<a href={{ this.link }} class="category__link">
+							<img src={{ this.image }} alt={{ this.altText }} class="category__img">
+							<span class="category__text">
+								{{ this.title }}
+							</span>
+						</a>
+					</columns>
+				{{/each }}
 			</row>
 			<row class="categories__row">
 				<columns small="12" large="12" class="categories__cta">
-					<a href="#" class="btn">Shop All</a>
+					<a href={{ promoData.galleryCTALink }} class="btn">Shop All</a>
 				</columns>
 			</row>
 		</columns>
@@ -88,7 +76,7 @@ subject: Get 30% off on your first purchase
 			<p class="body-text text-center">
 				If you sign up and become a member of our exciting community, you can enjoy multiple perks which include great discounts, freebies, and more.
 			</p>
-			<a href="#" class="btn">See Details</a>
+			<a href={{ promoData.membersCTALink }} class="btn">See Details</a>
 		</columns>
 	</row>
 	

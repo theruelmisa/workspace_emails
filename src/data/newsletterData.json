@@ -1,0 +1,28 @@
+{
+    "mainSnack": {
+        "image": "https://i.imgur.com/pDf48Mo.jpg",
+        "altText": "Main Snack Image",
+        "title": "We just launched our podcast!",
+        "bodyText": "Earlier this week, our podcast went on air with award-winning web designer Ana Savenchko. During the episode, she shared her thoughts on the importance of creating a great home office work environment... ",
+        "link": "#"
+    },
+    "upcomingEpisode": {
+        "id": "2",
+        "title": "Building a Digital Empire from Home",
+        "image": "https://i.imgur.com/zgnDWx5.jpg",
+        "altText": "Jenna Steward",
+        "bodyText": "We invite Jenna Steward, founder of Overwhelming Odds to discuss her strategy that took her Digital Art beyond North America",
+        "link": "#"
+    },
+    "recentEpisodes": [
+        {
+            "id": "1",
+            "title": "Building an Efficient Home Office Environment",
+            "image": "https://i.imgur.com/feZ45hP.jpg",
+            "altText": "Ana Savenchko",
+            "bodyText": "Freelance Web Designer Ana Savenchko shares her insight on how the right tools help create an effective workspace at home. Join us at this pilot episode!",
+            "link": "#"
+        }
+    ]
+    
+}

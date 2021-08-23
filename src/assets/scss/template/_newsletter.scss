@@ -1,0 +1,93 @@
+.main-snack {
+
+	.columns {
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+
+		& > table {
+			table-layout: fixed;
+			max-width: 568px;
+		}
+	}
+
+	&__img {
+		margin-bottom: 20px;
+	} 
+
+	&__body {
+		margin-bottom: 5px;
+	}
+
+	&__link {
+		text-decoration: underline;
+		font-size: 14px;
+		color: $warning-color !important;
+	}
+}
+
+.podcasts {
+
+	& > tbody > tr > th {
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+		padding-right: 40px !important;
+		padding-left: 40px !important;
+	}
+
+	&__section {
+
+		margin-bottom: 10px;
+
+		&-title {
+			color: $dark-gray;
+			margin-bottom: 0;
+		}
+
+		.hline {
+			margin-bottom: 20px;
+			.columns {
+				padding-top: 5px !important;
+			}
+
+			span {
+				display: block;
+				height: 3px;
+				width: 100%;
+				background: $dark-gray;
+				background-color: $dark-gray;
+			}
+		}
+
+	}
+
+	&__upcoming {
+
+		&-img {
+			object-fit: cover;
+		}
+
+		&-title {
+			text-transform: capitalize;
+			font-weight: 500;
+			font-size: 16px;
+			hyphens: none;
+			margin-bottom: 20px;
+			margin-right: 10px;
+		}
+
+		&-bodytext {
+			font-size: 14px;
+			hyphens: none;
+			margin-bottom: 20px;
+			margin-right: 10px;
+		}
+
+		&-btn {
+			margin: 0;
+		}
+
+		
+	}
+}

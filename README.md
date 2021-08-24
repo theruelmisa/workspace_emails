@@ -26,4 +26,15 @@ Images are all taken from _*unsplash*_. For the newsletter podcast images, I mad
 
 #### Persons
 
-[Photo by <a href="https://unsplash.com/@cikstefan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Štefan Štefančík</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]
+- Photo by <a href="https://unsplash.com/@cikstefan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Štefan Štefančík</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@michaeldam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dam</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+#### Furniture
+
+- Photo by <a href="https://unsplash.com/@lauradavidson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laura Davidson</a> on <a href="https://unsplash.com/s/photos/desk-chair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@daniellajardim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ella Jardim</a> on <a href="https://unsplash.com/@daniellajardim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@nathanrjliving?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Oakley</a> on <a href="https://unsplash.com/@nathanrjliving?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@artistsemamartin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sema Martin</a> on <a href="https://unsplash.com/@artistsemamartin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@lishakov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrej Lišakov</a> on <a href="https://unsplash.com/s/photos/desk-lamp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@dagny_2020?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dagny Reese</a> on <a href="https://unsplash.com/@dagny_2020?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@denysstriyeshyn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Denys Striyeshyn</a> on <a href="https://unsplash.com/@denysstriyeshyn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
